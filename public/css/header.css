@@ -1,8 +1,86 @@
 
 
-header{
-    background-color: var(--color-primary);
-    height: 5rem;
-    width: 100%;
+header.main_header{
+    background-color: #fff;
+    height: 4rem;
+    width:100%;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    box-shadow: 0 5px 10px rgba(35, 179, 232, 0.3);
 }
 
+header.main_header .header_logo{
+    width: 50px;
+
+}
+
+header.main_header .header_logo img{
+    width: 100%;
+}
+/*menu*/
+header.main_header .header_menuButton{
+
+}
+
+header.main_header .header_menuButton button{
+    background-color: var(--color-primary);
+    border: none;
+    width: 30px;
+    height: 35px;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 1.5rem;
+}
+
+
+header.main_header .header_menu{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%; 
+    background-color: #fff;   
+}
+
+header.main_header .header_menu .header_closeMenu{
+    position:absolute;
+    top:1rem;
+    right:1rem;
+    width:2rem;
+    height: 2rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--color-primary);
+    font-size: 1.5rem;
+}
+
+header.main_header .header_menu .header_avatar{
+    width:4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    margin: 0 auto;
+    position: relative;
+}
+
+header.main_header .header_menu .header_avatar .avatar_session{
+    position:absolute;
+    border-radius: 50%;
+    background-color: lime;
+    top:0;
+    right:0;
+    width: 10px;
+    height:10px;
+}
+/*
+header.main_header .header_searchBar{
+    display:none;
+}*/
